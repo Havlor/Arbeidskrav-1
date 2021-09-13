@@ -1,16 +1,13 @@
 ---
-title: "Tabell"
+title: "Descriptives"
 author: "Håvard Crantz Lorentzen"
-date: "10 9 2021"
+date: "13 9 2021"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-
-
 
 # Legge inn pakker
 library(dplyr)
@@ -19,12 +16,11 @@ library(knitr)
 library(kableExtra)
 library(flextable)
 
-glimpse(vo2data_rett)
 
-```{r my_table, results="asis"}
+```{r my_table}
 vo2data_rett %>% # take the dxadata data set
   select(fp, time, sex, age, height, weight) %>% 
-  # select participant, fp, time, sex, age, height and weight
+  # Velger fp, time, sex, age, height and weight
   
   filter(time == "pre") %>% # filter for å bare ha resulat fra pre
   
