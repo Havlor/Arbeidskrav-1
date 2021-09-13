@@ -1,0 +1,32 @@
+---
+title: "Tabell"
+author: "Håvard Crantz Lorentzen"
+date: "10 9 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+# Legge inn pakker
+library(dplyr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(remotes)
+install_github
+remotes::install_github("Havlor/arbeidskrav1")
+
+glimpse(vo2dataR)
+
+
+vo2dataR %>% # take the dxadata data set
+  select(fp, time, sex, age, height, weight) %>% 
+  # select participant, time, sex, include to height and fat.whole %>%
+  print()
+
+
