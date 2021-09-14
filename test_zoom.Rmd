@@ -7,7 +7,9 @@ editor_options:
 
 
 ##Introduksjon 
+Maksimalt oksygenopptak(Vo2max) forteller oss noe om kroppens evne til å ta opp og utnytte oksygen under arbeid (ref). Testing av maksimalt oksygenopptak innen idrett kan si oss noe om utøverens prestasjonsevne og kapasitet sett opp mot arbeidskrav. 
 
+Kan du lese dette håvard. 
 
 ##Metode 
 
